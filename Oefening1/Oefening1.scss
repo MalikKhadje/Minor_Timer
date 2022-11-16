@@ -1,3 +1,40 @@
+// ****************************************************************** VARIABLES
+
+$textcolor: white;
+$fontsize: 50px;
+
+$color-light_yellow: #f6e58d;
+$color-light_orange: #ffbe76;
+$color-light_red: #ff7979;
+$color-light_green: #badc58;
+$color-yellow: #f9ca24;
+$color-orange: #f0932b;
+$color-red: #eb4d4b;
+$color-green: #6ab04c;
+$color-light_blue: #22a6b3;
+$color-pink: #be2edd;
+$color-blue: #4834d4;
+$color-dark_blue: #130f40;
+
+// ****************************************************************** CODE
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
 body {
-    background-color: yellow;
+    background-color: $color-green;
+    text-align: center;
+    
+
+    #timer {
+        color: $textcolor;
+        font-size: $fontsize;
+        font-weight: 600;
+        margin-top: 45%;
+    }
 }
