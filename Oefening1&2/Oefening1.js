@@ -16,6 +16,12 @@ var x = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+    var hours = (hours.toLocaleString(undefined, { minimumIntegerDigits: 2 }));
+
+    var minutes = (minutes.toLocaleString(undefined, { minimumIntegerDigits: 2 }));
+
+    var seconds = (seconds.toLocaleString(undefined, { minimumIntegerDigits: 2 }));
+
     // Output the result in an element with id="timer"
     document.getElementById("timer").innerHTML = days + " Dagen <br>" + hours + " Uur <br>"
         + minutes + " Minuten <br>" + seconds + " Seconden";
