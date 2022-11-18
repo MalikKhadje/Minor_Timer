@@ -1,5 +1,12 @@
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
+var countDownTime = new Date().getTime();
+// Verander de timer naar 6 min:
+
+var add_minutes =  function (dt, minutes) {
+    return new Date(dt.getTime() + minutes*60000);
+}
+
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -27,8 +34,13 @@ var x = setInterval(function () {
         + minutes + " Minuten <br>" + seconds + " Seconden";
 
     // If the count down is over, write some text 
+    if(distance < 5){
+        document.getElementById("timer").style.transform = "scale(2.1)";
+    }
+    
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("timer").innerHTML = "Gelukkig Nieuwjaar!";
     }
+    
 }, 1000);
