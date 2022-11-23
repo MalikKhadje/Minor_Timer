@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #6ab04c;
+  background-color: #130f40;
   text-align: center;
 }
 body #timer {
@@ -15,4 +15,33 @@ body #timer {
   font-size: 50px;
   font-weight: 600;
   margin-top: 45%;
+}
+
+p {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 4px #fff;
+  margin-top: 25vh;
+  font-size: 100px;
+}
+
+.tool-btn {
+  background-color: #130f40;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.tool-btn button {
+  transition: 0.2s;
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin: 0 10px;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 10px #aaf;
+}
+
+.tool-btn button:hover {
+  background-color: #aaa;
 }/*# sourceMappingURL=Oefening3.css.map */

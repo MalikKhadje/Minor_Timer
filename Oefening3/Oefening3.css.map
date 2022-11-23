@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "sources": [
-        "Oefening3.scss",
-        "Oefening3.css"
-    ],
-    "names": [],
-    "mappings": "AAoBA;EACI,SAAA;EACA,UAAA;EACA,qBAAA;EACA,sBAAA;EACA,kBAAA;ACnBJ;;ADsBA;EACI,yBAjBW;EAkBX,kBAAA;ACnBJ;ADqBI;EACI,YA/BI;EAgCJ,eA/BG;EAgCH,gBAAA;EACA,eAAA;ACnBR",
-    "file": "Oefening3.css"
-}
+{"version":3,"sources":["Oefening3.scss","Oefening3.css"],"names":[],"mappings":"AAoBA;EACI,SAAA;EACA,UAAA;EACA,qBAAA;EACA,sBAAA;EACA,kBAAA;ACnBJ;;ADsBA;EACI,yBAbY;EAcZ,kBAAA;ACnBJ;ADqBI;EACI,YA/BI;EAgCJ,eA/BG;EAgCH,gBAAA;EACA,eAAA;ACnBR;;ADuBA;EACI,kBAAA;EACA,WAAA;EACA,yBAAA;EACA,gBAAA;EACA,gBAAA;ACpBJ;;ADuBA;EACI,yBAjCY;EAkCZ,eAAA;EACA,kBAAA;ACpBJ;;ADuBA;EACI,gBAAA;EACA,sBAAA;EACA,kBAAA;EACA,kBAAA;EACA,cAAA;EACA,SAAA;EACA,UAAA;EACA,yBAAA;ACpBJ;;ADuBA;EACI,sBAAA;ACpBJ","file":"Oefening3.css"}
