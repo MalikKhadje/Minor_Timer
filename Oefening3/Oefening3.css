@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+body {
+  background-color: #6ab04c;
+  text-align: center;
+}
+body #timer {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 45%;
+}/*# sourceMappingURL=Oefening1.css.map */

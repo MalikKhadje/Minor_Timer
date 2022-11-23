@@ -1,0 +1,39 @@
+// ****************************************************************** VARIABLES
+
+$textcolor: white;
+$fontsize: 50px;
+
+$color-groep1: #f6e58d;
+$color-groep2: #ffbe76;
+$color-groep3: #ff7979;
+$color-groep4: #badc58;
+$color-groep5: #f9ca24;
+$color-groep6: #f0932b;
+$color-groep7: #eb4d4b;
+$color-groep8: #6ab04c;
+$color-groep9: #22a6b3;
+$color-groep10: #be2edd;
+$color-groep11: #4834d4;
+$color-groep12: #130f40;
+
+// ****************************************************************** CODE
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    background-color: $color-groep8;
+    text-align: center;
+
+    #timer {
+        color: $textcolor;
+        font-size: $fontsize;
+        font-weight: 600;
+        margin-top: 45%;
+    }
+}
