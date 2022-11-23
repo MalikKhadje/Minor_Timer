@@ -9,19 +9,13 @@
 body {
   background-color: #130f40;
   text-align: center;
-}
-body #timer {
-  color: white;
-  font-size: 50px;
-  font-weight: 600;
-  margin-top: 45%;
+  padding-top: 25vh;
 }
 
 p {
   text-align: center;
   color: #fff;
   text-shadow: 0 0 4px #fff;
-  margin-top: 25vh;
   font-size: 100px;
 }
 
@@ -43,5 +37,49 @@ p {
 }
 
 .tool-btn button:hover {
-  background-color: #aaa;
+  background-color: #22a6b3;
+  transform: scale(1.1);
+}
+
+#progress {
+  width: 25%;
+  height: 100px;
+  -webkit-animation: progress;
+          animation: progress;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    background: red;
+  }
+  25% {
+    background: blue;
+  }
+  50% {
+    background: yellow;
+  }
+  75% {
+    background: green;
+  }
+  100% {
+    background: red;
+  }
+}
+
+@keyframes progress {
+  0% {
+    background: red;
+  }
+  25% {
+    background: blue;
+  }
+  50% {
+    background: yellow;
+  }
+  75% {
+    background: green;
+  }
+  100% {
+    background: red;
+  }
 }/*# sourceMappingURL=Oefening3.css.map */

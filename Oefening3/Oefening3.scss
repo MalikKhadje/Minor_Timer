@@ -29,20 +29,13 @@ $color-groep12: #130f40;
 body {
     background-color: $color-groep12;
     text-align: center;
-
-    #timer {
-        color: $textcolor;
-        font-size: $fontsize;
-        font-weight: 600;
-        margin-top: 45%;
-    }
+    padding-top: 25vh;
 }
 
 p {
     text-align: center;
     color: #fff;
     text-shadow: 0 0 4px #fff;
-    margin-top: 25vh;
     font-size: 100px;
 }
 
@@ -64,5 +57,32 @@ p {
 }
 
 .tool-btn button:hover {
-    background-color: #aaa;
+    background-color: $color-groep9;
+    transform: scale(1.1);
+}
+
+
+// hier werk je aan
+#progress {
+    width: 25%;
+    height: 100px;
+    animation: progress;
+}
+
+@keyframes progress {
+    0% {
+        background: red;
+    }
+    25% {
+        background: blue;
+    }
+    50% {
+        background: yellow;
+    }
+    75% {
+        background: green;
+    }
+    100% {
+        background: red;
+    }
 }
