@@ -8,7 +8,7 @@ function timerHandler() {
     let number = Number(p.innerHTML) - 1;
 
     if (number == -1) {
-        number = 10;
+        location.reload();
     }
 
     if (number < 5) {
@@ -27,12 +27,18 @@ function timerHandler() {
 let checkerStart = 0;
 let checkerEnd = 0;
 
+(function () {
+    timer = setInterval(timerHandler, 1000);
+    checkerStart = 1;
+    checkerEnd = 0;
+})();
+
 start.addEventListener('click', () => {
     if (checkerStart < 1) {
         timer = setInterval(timerHandler, 1000);
         checkerStart = 1;
         checkerEnd = 0;
-        progress.style.animation = 'progress'; 
+        // progress.style.animation = 'progress'; 
         // hier werk je aan
     };
 });

@@ -39,47 +39,4 @@ p {
 .tool-btn button:hover {
   background-color: #22a6b3;
   transform: scale(1.1);
-}
-
-#progress {
-  width: 25%;
-  height: 100px;
-  -webkit-animation: progress;
-          animation: progress;
-}
-
-@-webkit-keyframes progress {
-  0% {
-    background: red;
-  }
-  25% {
-    background: blue;
-  }
-  50% {
-    background: yellow;
-  }
-  75% {
-    background: green;
-  }
-  100% {
-    background: red;
-  }
-}
-
-@keyframes progress {
-  0% {
-    background: red;
-  }
-  25% {
-    background: blue;
-  }
-  50% {
-    background: yellow;
-  }
-  75% {
-    background: green;
-  }
-  100% {
-    background: red;
-  }
 }/*# sourceMappingURL=Oefening3.css.map */

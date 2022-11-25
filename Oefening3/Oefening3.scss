@@ -61,28 +61,3 @@ p {
     transform: scale(1.1);
 }
 
-
-// hier werk je aan
-#progress {
-    width: 25%;
-    height: 100px;
-    animation: progress;
-}
-
-@keyframes progress {
-    0% {
-        background: red;
-    }
-    25% {
-        background: blue;
-    }
-    50% {
-        background: yellow;
-    }
-    75% {
-        background: green;
-    }
-    100% {
-        background: red;
-    }
-}
