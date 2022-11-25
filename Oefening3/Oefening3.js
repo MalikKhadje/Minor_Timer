@@ -1,11 +1,12 @@
 let p = document.querySelector('p');
 let start = document.getElementById('start');
 let end = document.getElementById('end');
-let progress = document.getElementById('progress');
+let reset = document.getElementById('reset');
+let number = Number(p.innerHTML);
 let timer;
 
 function timerHandler() {
-    let number = Number(p.innerHTML) - 1;
+    number = number - 1;
 
     if (number == -1) {
         location.reload();
@@ -23,6 +24,11 @@ function timerHandler() {
 
     p.innerHTML = number;
 }
+reset.onclick = function(){
+    number = 11;
+};
+
+
 
 let checkerStart = 0;
 let checkerEnd = 0;
