@@ -24,7 +24,7 @@ function timerHandler() {
 
     p.innerHTML = number;
 }
-reset.onclick = function(){
+reset.onclick = function () {
     number = 11;
 };
 
