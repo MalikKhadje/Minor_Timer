@@ -24,8 +24,6 @@ $color-groep12: #130f40;
     text-decoration: none;
     box-sizing: border-box;
     font-family: arial;
-
-    border: 2px solid black;
 }
 
 html,
@@ -36,37 +34,51 @@ body {
 
 #topbar {
     width: 100%;
-    height: auto;
+    height: 30%;
+
+    border: 1px solid black;
 
     display: flex;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    align-items: stretch;
 
-    #titel1{
-        width: 200px;
-        height: 100px;
-    }
-    
-    #titel2{
-        width: 200px;
-        height: 100px;
+    .titel {
+        background-color: yellow;
+        flex-grow: 1;
+        height: 50%;
+        margin: auto 0;
     }
 
-    #klok{
-        width: 300px;
+    #klok {
+        flex-grow: 2;
         height: 300px;
+
+        border: 1px solid black;
+
+        #kloktijd {
+            width: 80%;
+            height: 40%;
+            margin: 0 auto;
+
+            border: 1px solid black;
+        }
     }
 }
 
-#onder{
+#onder {
     background-color: gray;
-    height: auto;
+    width: 100%;
+    height: 70%;
+    display: flex;
 }
 
 #resterend {
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 
 #volgende {
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
