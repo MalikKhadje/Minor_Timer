@@ -3,6 +3,10 @@
 $textcolor: white;
 $fontsize: 50px;
 
+$main-color-zwart: #141414;
+$main-color-rood: #d52121;
+$main-color-zilver: #c0bcb5;
+
 $color-groep1: #f6e58d;
 $color-groep2: #ffbe76;
 $color-groep3: #ff7979;
@@ -34,7 +38,7 @@ body {
 
 #topbar {
     width: 100%;
-    height: 30%;
+    height: 20%;
 
     border: 1px solid black;
 
@@ -44,7 +48,6 @@ body {
     align-items: stretch;
 
     .titel {
-        background-color: yellow;
         flex-grow: 1;
         height: 50%;
         margin: auto 0;
@@ -52,15 +55,19 @@ body {
 
     #klok {
         flex-grow: 2;
-        height: 300px;
-
-        border: 1px solid black;
+        height: 150%;
 
         #kloktijd {
-            width: 80%;
-            height: 40%;
-            margin: 0 auto;
+            width: 500px;
+            height: 500px;
 
+            margin: 0 auto;
+            margin-top: -200px;
+            padding-top: 250px;
+            text-align: center;
+            font-size: $fontsize;
+
+            border-radius: 50%;
             border: 1px solid black;
         }
     }
@@ -69,7 +76,7 @@ body {
 #onder {
     background-color: gray;
     width: 100%;
-    height: 70%;
+    height: 80%;
     display: flex;
 }
 
