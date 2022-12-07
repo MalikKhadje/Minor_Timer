@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
   font-family: arial;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-feature-settings: "tnum";
 }
 
 html,
@@ -23,8 +27,13 @@ body {
 }
 #topbar .titel {
   flex-grow: 1;
-  height: 50%;
+  height: auto;
   margin: auto 0;
+  text-align: center;
+  font-size: 50px;
+}
+#topbar #titel2 {
+  flex-grow: 1.8;
 }
 #topbar #klok {
   flex-grow: 2;
@@ -48,13 +57,19 @@ body {
   height: 80%;
   display: flex;
 }
+#onder div {
+  font-size: 25px;
+}
 
 #resterend {
   width: 50%;
   height: 100%;
+  text-align: start;
+  padding: 50px 20px 50px 70px;
 }
-
 #volgende {
   width: 50%;
   height: 100%;
+  text-align: end;
+  padding: 50px 70px 50px 20px;
 }/*# sourceMappingURL=style.css.map */
