@@ -61,15 +61,51 @@ body {
   font-size: 25px;
 }
 
+.ondertitel {
+  margin-bottom: 25px;
+}
+
 #resterend {
-  width: 50%;
+  flex-grow: 1;
   height: 100%;
   text-align: start;
-  padding: 50px 20px 50px 70px;
+  padding: 50px 100px 50px 70px;
+  display: flex;
+  flex-direction: column;
 }
+#resterend #ronde1 {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+#resterend #ronde2 {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
 #volgende {
-  width: 50%;
+  flex-grow: 1;
   height: 100%;
   text-align: end;
-  padding: 50px 70px 50px 20px;
+  padding: 50px 70px 50px 100px;
+  display: flex;
+  flex-direction: column;
+}
+#volgende #ronde3 {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+#volgende #ronde4 {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+.onderwrap {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
