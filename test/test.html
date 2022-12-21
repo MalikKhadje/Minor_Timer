@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js" defer></script>
+</head>
+
+<body>
+    <div id="digital-signage-board">
+
+        <!-- Dit is de container voor de klok -->
+        <div id="clock">
+            <!-- Dit is de tekst die de huidige tijd laat zien -->
+            <p id="time"></p>
+        </div>
+        <!-- Dit is de container voor het huidige kleurenbandje -->
+        <div id="current-color">
+            <!-- Dit is de tekst die aangeeft welk kleurenbandje momenteel aan het springen is -->
+            <p id="color-text">Huidig kleurenbandje:</p>
+            <!-- Dit is de kleurvlak die het huidige kleurenbandje laat zien -->
+            <div id="color-box"></div>
+        </div>
+        <!-- Dit is de container voor de lijst met volgende springrondes -->
+        <div id="next-rounds">
+            <h2>Volgende springrondes:</h2>
+            <!-- Dit is een lijst met de volgende springrondes, met voor iedere ronde een kleurvlak en een tijdstip -->
+            <ul id="round-list">
+                <li>
+                    <div class="color-box"></div>
+                    <p class="round-time">12:00</p>
+                </li>
+                <!-- Voeg hier meer lijstitems toe voor de volgende springrondes -->
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
