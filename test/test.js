@@ -33,7 +33,9 @@ function updateTime() {
     const seconds = 60 - now.getSeconds();
 
     // Zet de tijd in het formaat mm:ss
+    
     const timeString = `${minutes}:${seconds}`;
+
 
     // Zet de tijd op het scherm
     clock.textContent = timeString;
