@@ -25,21 +25,8 @@ const rounds = [
 ];
 
 
-const currentTime = new Date();
-const currentHour = currentTime.getHours();
-const currentMinute = currentTime.getMinutes();
 
-if (currentHour < 10 || (currentHour === 12 && currentMinute === 0)) {
-    document.getElementById("popup").style.display = "block";
-}
 
-if (currentHour > 18 || (currentHour === 12 && currentMinute === 0)) {
-    document.getElementById("popup").style.display = "block";
-}
-
-else{
-    document.getElementById("popup").style.display = "none";
-}
 
 // Voer deze functie uit om de tijd te updaten
 function updateTime() {
@@ -91,7 +78,20 @@ function updateTime() {
 
         // Voeg het lijstitem toe aan de lijst
         roundList.appendChild(li);
+
+        
     }
+
+}
+
+const currentTime = new Date();
+const currentHour = currentTime.getHours();
+const currentMinute = currentTime.getMinutes();
+
+if (currentHour < 12 || (currentHour === 12 && currentMinute === 0) || (currentHour > 18 || (currentHour === 18 && currentMinute === 0))) {
+  document.getElementById("popup").style.display = "block";
+} else {
+  document.getElementById("popup").style.display = "none";
 }
 
 
