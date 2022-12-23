@@ -1,3 +1,20 @@
+
+setInterval(function tijd() {
+    let time = new Date();
+    let h = time.getHours();
+    let m = time.getMinutes();
+
+    if (m < 10) {
+        m = "0" + m;
+    }
+
+    if (h < 10) {
+        h = "0" + h;
+    }
+
+    document.getElementById("kloktijd").innerHTML = h + ":" + m;
+}, 1000);
+
 // Haal de elementen op die we later willen gebruiken
 const clock = document.getElementById('clock');
 const colorText = document.getElementById('color-text');
@@ -79,7 +96,7 @@ function updateTime() {
         // Voeg het lijstitem toe aan de lijst
         roundList.appendChild(li);
 
-        
+
     }
 
 }
@@ -89,9 +106,9 @@ const currentHour = currentTime.getHours();
 const currentMinute = currentTime.getMinutes();
 
 if (currentHour < 10 || (currentHour === 12 && currentMinute === 0) || (currentHour > 18 || (currentHour === 18 && currentMinute === 0))) {
-  document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.display = "block";
 } else {
-  document.getElementById("popup").style.display = "none"; 
+    document.getElementById("popup").style.display = "none";
 }
 
 

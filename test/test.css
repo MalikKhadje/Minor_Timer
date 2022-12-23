@@ -17,16 +17,20 @@ body {
   font-family: monospace;
   position: relative;
   display: flex;
+  justify-content: space-between;
 }
 
 /* Stijlen voor de klok */
 #clock {
+  width: 20%;
   font-size: 72px;
   color: black;
+  text-align: center;
 }
 
 /* Stijlen voor het huidige kleurenbandje */
 #current-color {
+  width: 30%;
   font-size: 36px;
   color: black;
 }
@@ -41,6 +45,7 @@ body {
 
 /* Stijlen voor de lijst met volgende springrondes */
 #next-rounds {
+  width: 30%;
   font-size: 36px;
   color: black;
 }

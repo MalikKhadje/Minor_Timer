@@ -9,6 +9,31 @@ body {
     background-color: teal;
 }
 
+#klok {
+    left: 0;
+    right: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    height: 150%;
+
+    #kloktijd {
+        width: 500px;
+        height: 500px;
+
+        margin: 0 auto;
+        margin-top: -200px;
+        padding-top: 250px;
+        text-align: center;
+        font-size: $fontsize;
+
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+}
+
 /* Stijlen voor het hele bord */
 
 #digital-signage-board {
@@ -19,16 +44,22 @@ body {
     position: relative;
 
     display: flex;
+    justify-content: space-between;
 }
 
 /* Stijlen voor de klok */
 #clock {
+    width: 20%;
+
     font-size: 72px;
     color: black;
+    text-align: center;
 }
 
 /* Stijlen voor het huidige kleurenbandje */
 #current-color {
+    width: 30%;
+
     font-size: 36px;
     color: black;
 }
@@ -44,6 +75,8 @@ body {
 
 /* Stijlen voor de lijst met volgende springrondes */
 #next-rounds {
+    width: 30%;
+
     font-size: 36px;
     color: black;
 }
