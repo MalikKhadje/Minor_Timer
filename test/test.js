@@ -28,7 +28,7 @@ const currentTime = new Date();
 const currentHour = currentTime.getHours();
 const currentMinute = currentTime.getMinutes();
 
-if (currentHour < 12 || (currentHour === 12 && currentMinute === 0)) {
+if (currentHour < 10 || (currentHour === 12 && currentMinute === 0)) {
   document.getElementById("popup").style.display = "block";
 }
 
