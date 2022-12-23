@@ -34,7 +34,7 @@ function updateTime() {
     const now = new Date();
 
     // Bepaal het aantal minuten en seconden tot het einde van de huidige springronde
-    const minutes = 30 - now.getMinutes() % 30;
+    const minutes = 29 - now.getMinutes() % 30;
     const seconds = 60 - now.getSeconds();
 
     // Zet de tijd in het formaat mm:ss
