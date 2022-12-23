@@ -21,6 +21,7 @@ const rounds = [
     { color: 'black', time: '16:30' },
     { color: 'white', time: '17:00' },
     { color: 'silver', time: '17:30' },
+    { color: 'silver', time: '18:00' },
 ];
 
 
@@ -29,7 +30,15 @@ const currentHour = currentTime.getHours();
 const currentMinute = currentTime.getMinutes();
 
 if (currentHour < 10 || (currentHour === 12 && currentMinute === 0)) {
-  document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.display = "block";
+}
+
+if (currentHour > 18 || (currentHour === 12 && currentMinute === 0)) {
+    document.getElementById("popup").style.display = "block";
+}
+
+else{
+    document.getElementById("popup").style.display = "none";
 }
 
 // Voer deze functie uit om de tijd te updaten
@@ -42,7 +51,7 @@ function updateTime() {
     const seconds = 60 - now.getSeconds();
 
     // Zet de tijd in het formaat mm:ss
-    
+
     const timeString = `${minutes}:${seconds}`;
 
 
