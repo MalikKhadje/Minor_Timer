@@ -23,6 +23,15 @@ const rounds = [
     { color: 'silver', time: '17:30' },
 ];
 
+
+const currentTime = new Date();
+const currentHour = currentTime.getHours();
+const currentMinute = currentTime.getMinutes();
+
+if (currentHour < 12 || (currentHour === 12 && currentMinute === 0)) {
+  document.getElementById("popup").style.display = "block";
+}
+
 // Voer deze functie uit om de tijd te updaten
 function updateTime() {
     // Haal de huidige tijd op
