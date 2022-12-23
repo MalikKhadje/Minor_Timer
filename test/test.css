@@ -20,21 +20,12 @@ body {
 
 /* Stijlen voor de klok */
 #clock {
-  /* Zet de positie op het midden van het scherm */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 72px;
   color: black;
 }
 
 /* Stijlen voor het huidige kleurenbandje */
 #current-color {
-  /* Zet de positie op de linkerbovenhoek van het scherm */
-  position: absolute;
-  top: 10px;
-  left: 10px;
   font-size: 36px;
   color: black;
 }
@@ -49,10 +40,6 @@ body {
 
 /* Stijlen voor de lijst met volgende springrondes */
 #next-rounds {
-  /* Zet de positie op de rechteronderhoek van het scherm */
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
   font-size: 36px;
   color: black;
 }
