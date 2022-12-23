@@ -88,7 +88,7 @@ const currentTime = new Date();
 const currentHour = currentTime.getHours();
 const currentMinute = currentTime.getMinutes();
 
-if (currentHour < 12 || (currentHour === 12 && currentMinute === 0) || (currentHour > 18 || (currentHour === 18 && currentMinute === 0))) {
+if (currentHour < 10 || (currentHour === 12 && currentMinute === 0) || (currentHour > 18 || (currentHour === 18 && currentMinute === 0))) {
   document.getElementById("popup").style.display = "block";
 } else {
   document.getElementById("popup").style.display = "none"; 
