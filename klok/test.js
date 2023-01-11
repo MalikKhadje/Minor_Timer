@@ -106,9 +106,11 @@ const currentHour = currentTime.getHours();
 const currentMinute = currentTime.getMinutes();
 
 if (currentHour < 10 || (currentHour === 12 && currentMinute === 0) || (currentHour > 18 || (currentHour === 18 && currentMinute === 0))) {
-    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup").style.display = "flex";
+    document.getElementById("digital-signage-board").style.display = "none";
 } else {
     document.getElementById("popup").style.display = "none";
+    document.getElementById("digital-signage-board").style.display = "flex";
 }
 
 
